@@ -1,0 +1,180 @@
+/* Basic Reset and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light background */
+}
+
+a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #D62828; /* Peruvian Red */
+    color: #FFC300; /* Peruvian Gold/Yellow */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.logo p {
+    margin: 5px 0 15px 0;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+nav a {
+    color: #fff;
+    padding: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #FFC300;
+    text-decoration: none;
+}
+
+/* General Section Styles */
+main section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #00427c; /* Peruvian Blue */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: left;
+}
+
+.hero-content h2 {
+    font-size: 2em;
+    text-align: left;
+    color: #D62828;
+}
+
+.photo-placeholder {
+    width: 300px;
+    height: 200px;
+    background-color: #ccc; /* Placeholder for image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Call to Action Button */
+.btn {
+    display: inline-block;
+    background-color: #D62828; /* Red */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #a02020; /* Darker Red */
+    text-decoration: none;
+}
+
+/* Menu & Schedule Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #FFC300; /* Gold */
+    color: #333;
+}
+
+/* Menu Styling */
+.menu-category {
+    margin-bottom: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.menu-category h3 {
+    color: #00427c;
+    border-bottom: 2px solid #FFC300;
+    padding-bottom: 5px;
+}
+
+dl dt {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #D62828;
+}
+
+dl dd {
+    margin-left: 0;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-left: 3px solid #eee;
+}
+
+.specials {
+    text-align: center;
+    padding: 15px;
+    border: 2px dashed #D62828;
+    margin-bottom: 30px;
+}
+
+/* Contact and Footer */
+.contact-info, .social-links {
+    text-align: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
