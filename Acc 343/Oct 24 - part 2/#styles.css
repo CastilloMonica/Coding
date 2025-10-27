@@ -1,0 +1,393 @@
+/* --- Variables & Base Styles --- */
+:root {
+    --primary-color: #e31b23; /* Red */
+    --secondary-color: #ffffff; /* White */
+    --dark-color: #333;
+    --light-gray: #f4f4f4;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--dark-color);
+    background: var(--secondary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+
+.white-text {
+    color: var(--secondary-color) !important;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 15px 0;
+    border-bottom: 3px solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: var(--dark-color);
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: url('placeholder-food-truck-background.jpg') no-repeat center center/cover;
+    /* In a real project, this would be a high-quality food or truck image. */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    /* Using a gradient overlay for better text readability */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    color: var(--secondary-color);
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: #c2151c; /* Darker red */
+    transform: translateY(-2px);
+}
+
+/* --- About Us Section --- */
+#about {
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+
+/* --- Location & Menu Background Section --- */
+.location-menu-bg {
+    background: var(--light-gray);
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.schedule-item {
+    background: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+/* --- Menu Section --- */
+.menu-section {
+    background: var(--secondary-color);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    background: var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.menu-item .description {
+    font-size: 0.9em;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.menu-item .price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2em;
+    text-align: right;
+}
+
+/* --- Services Section --- */
+.red-bg {
+    background: var(--primary-color);
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* --- Testimonials Section --- */
+#testimonials {
+    background: var(--light-gray);
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 5px;
+    border-top: 5px solid var(--primary-color);
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card .reviewer {
+    font-weight: 700;
+    margin-top: 15px;
+    font-style: normal;
+    color: var(--primary-color);
+}
+
+/* --- Contact Section --- */
+.contact-bg {
+    background: var(--dark-color);
+    text-align: center;
+}
+
+.contact-intro {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info p, .contact-info a {
+    font-size: 1.2em;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+.contact-info a {
+    text-decoration: underline;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    color: var(--secondary-color);
+    background: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.social-links a:hover {
+    background: #c2151c; /* Darker red */
+}
+
+/* --- Footer --- */
+footer {
+    background: var(--dark-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+/* --- Mobile Responsiveness (Media Queries) --- */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+    
+    /* Header/Nav Adjustments */
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Hero Adjustments */
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content h2 {
+        font-size: 3em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+    
+    /* Grid Adjustments for smaller screens */
+    .schedule-grid, .menu-grid, .services-list, .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item, .schedule-item, .service-card, .testimonial-card {
+        margin: 0 10px; /* Add some side margin for mobile view */
+    }
+
+    /* Contact Info Adjustments */
+    .contact-info p, .social-links a {
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2.5em;
+    }
+    .hero-content p {
+        font-size: 1em;
+    }
+}
